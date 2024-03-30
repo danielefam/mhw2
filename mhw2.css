@@ -1,0 +1,669 @@
+
+/* REGOLE E CLASSI GENERALI */
+
+html {
+    font-size: 16px;
+}
+
+@media(max-width: 700px){
+    html{
+        font-size: 15px
+    }
+}
+
+body {
+    margin: 0;
+    font-family: "Pontano Sans", sans-serif;;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #9baf26;
+    cursor: pointer;
+}
+
+h3 {
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 2.739vh;
+    margin-bottom: 1.369vh;
+}
+
+input {
+    width: 11.58vw;
+    height: 2.465vh;
+    padding: 0.82vh 0.39vw;
+    border: solid gray 0.05vw;
+    margin-top: 0.41vh;
+}
+
+a:hover {
+    color: #707f1b;
+}
+
+/* nav {
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a img {
+    height: 20%;
+    width: 16%;
+} */
+
+
+
+
+/* REGOLE HEADER */
+
+#prima-riga-esterno {
+    background-color: whitesmoke;
+    height: 4.657vh;
+    width: 100%;
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+}
+
+.pre-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin-left: 11.38vw;
+    margin-right: 11.38vw;
+    padding-left: 0.976vw;
+    padding-right: 0.976vw;
+}
+
+#sistemamargine{
+    width: 6.37vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sistemamargine a{
+    text-decoration: none;
+    width: 20px;
+    margin: 5px 8px;
+    color: grey;
+}
+
+#sistemamargine a:hover{
+    color: #9cb026;
+}
+
+
+
+#email {
+    font-size: 0.9rem;
+}
+
+.fa-envelope {
+    color: grey;
+    margin-right: 3px;
+}
+
+#fisso {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+#nav-caratteristiche{
+    width: 37.76vw;
+    height: 12.33vh;
+    padding-left: 0.976vw;
+    padding-right: 0.976vw;
+}
+
+#nav-caratteristiche a {
+    display: inline-block;
+    padding: 0px 0.976vw;
+    line-height: 12.33vh;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.065vw;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+#nav-caratteristiche a:visited{
+    color: black;
+}
+
+#nav-caratteristiche a:hover{
+    color: #9cb026;
+}
+
+#nav-caratteristiche strong {
+    color: #9cb026
+}
+
+
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+
+header {
+    background-color: #9baf26;
+    color: white;
+    text-transform: uppercase;
+    height: 14.24vh;
+}
+
+header h3 {
+    margin-top: 2.05vh;
+    margin-bottom: 0vh;
+    height: 4.11vh;
+    font-size: 0.875rem;
+}
+
+header a {
+    padding-left: 1.3vw;
+    padding-right: 1.3vw;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+#blocco-header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 11.377vw;
+    margin-right: 11.377vw;
+    padding-left: 0.976vw;
+    padding-right: 0.976vw;
+}
+
+#blocco-header a {
+    color: white;
+}
+
+#blocco-recensioni{
+    position: relative; 
+}
+
+.hover {
+    background-color: #71811a;
+}
+
+#blocco-recensioni nav {
+    position: absolute; 
+    background-color: #303030;
+    width: 13.02vw;
+    /* Ho aggiornato il riferimento grazie all'id 'blocco-recensioni' sopra */
+}
+
+#blocco-recensioni ul{
+    margin: 0;
+    padding: 0;
+    width: 0%;
+}
+
+#blocco-recensioni nav ul {
+    margin: 0 0 0 0;
+    width: auto;
+    padding: 0;
+    text-transform: none;
+}
+
+#blocco-recensioni nav ul li {
+    display: block;    
+    border-bottom: solid 1px gray;
+    padding: 10px 0 10px 10px;
+    margin-right: 10px;
+}
+
+#blocco-recensioni nav ul a {
+    font-size: 0.8em;
+    color: gainsboro;
+    padding: 0;
+}
+
+#tasto-recensioni{
+    display: flex;
+    width: 6.938vw;
+    height: 8.21vh;
+    text-align: center;
+    align-items: center;
+    padding-right: 0;
+    /* metto la posizione relativa in modo da cambiare l'elemento di riferimento
+    del menu a tendina che sarà position: absolute */
+}
+
+a#tasto-recensioni strong {
+    font-weight: bold;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-left: 8px;
+    position: relative;
+    bottom: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+}
+
+
+
+
+@media (max-width: 1240px) {
+
+    .pre-header {
+        align-items: center;
+    }
+
+    #nav-caratteristiche {
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #sistemamargine a {
+        margin: 0px 2px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    #prima-riga-esterno {
+        height: 89px;
+    }
+
+    /*questo id lo creo ora per distaccarmi dal pre-header che ha direzione row*/
+    #riga-loghi-social {
+        flex-direction: column;
+    }
+
+    #sistemamargine{
+        width: 100%;
+    }
+
+    #sistemamargine a {
+        margin: 0px 4px;
+    }
+
+    input {
+        width: 100%;
+        height: 120%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .pre-header , #blocco-header {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    #tasto-recensioni {
+        width: 120%;
+        padding-left: 15%;
+    }
+
+    #blocco-recensioni ul{
+        width: 20%;
+    }
+
+    #blocco-recensioni nav {
+        width: calc(50% - 10vw);
+    }
+
+    .arrow {
+        margin-left: 3vw;
+    }
+}
+
+
+
+
+/*-------------------------------------- SEZIONE PRINCIPALE --------------------------*/
+
+
+#main-section {
+    width: 74.21vw;
+    margin-left: 11.36vw;
+    margin-right: 11.36vw;
+    padding-left: 0.976vw;
+    padding-right: 0.976vw;
+    text-align: center;
+    color: #333333;
+}
+
+#sub-main {
+    display: inline-block;
+    max-width: 80%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Pontano Sans';
+    font-weight: normal;
+    line-height: 3.28vh;
+}
+
+#main-section h2{
+    font-family: Poppins;
+    font-size: 2.25rem;
+    margin-bottom: 2.05vh;
+    font-weight: 300;
+}
+
+#main-section h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+#main-section-visita {
+    padding-top: 6.849vh;
+    padding-bottom: 6.849vh;
+}
+
+#main-section-visita div{
+    margin-top: 4vh;
+}
+
+#main-section-visita span {
+    margin-right: .5%;
+}
+
+#main-section-visita a {
+    padding: 1.1vh 0.78vw;
+    background-color: #9cb026;
+    color: white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+#main-section-visita a:hover {
+    background-color: #00E66E;
+    cursor: pointer;
+}
+
+.foto-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6.849vh;
+    padding-bottom: 6.849vh;
+}
+
+.prime-foto {
+    height: 70%;
+    width: 91%;
+}
+
+.seconde-foto {
+    height: 86.569%;
+    width: 94%;
+}
+
+#terza-foto {
+    height: 100%;
+    width: 100%;
+}
+
+.ultime-foto {
+    height: 72%;
+    width: 91%
+}
+
+#episodi2 {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 6.849vh;
+    margin-bottom: 6.849vh;
+}
+
+#bottone-episodi {
+    display: flex;
+    margin-bottom: 6vh;
+}
+
+#bottone-episodi button {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: .7vh .7vw;
+    background-color: #a2b7276e;
+    margin-left: 1vw;
+}
+
+#bottone-episodi button:hover{
+    background-color: #89c2338b;
+}
+
+.ultime-foto2 {
+    height: 26.67vh;
+    width: 23.437vw;
+}
+
+
+.blocco-main {
+    padding-top: 6.849vh;
+    padding-bottom: 6.849vh;
+}
+
+.blocco-main h1 {
+    font-size: 2.5rem;
+}
+
+.blocco-main strong {
+    font-weight: 700;
+}
+
+
+@media(max-width: 1250px){
+
+    #main-section {
+        margin: auto;
+        width: 90%;
+    }
+
+    .foto-main {
+        flex-direction: column;
+    }
+
+
+    .prime-foto {
+        height: 100%;
+        width: 100%;
+    }
+
+    .seconde-foto {
+        height: 100%;
+        width: 100%;
+    }
+
+    #terza-foto {
+        height: 100%;
+        width: 100%;
+    }
+
+    #episodi2 , #bottone-episodi{
+        display: none;
+    }
+
+}
+
+@media (max-width: 700px){
+    .episodi1 {
+        display: none;
+    }
+}
+
+
+
+/*-----------------------------FOOTER-----------------------------*/
+
+
+#pre-footer-esterno{
+    height: 26.03vh;
+    padding-top: 13.698vh;
+    padding-bottom: 13.698vh;
+    background-color: whitesmoke;
+}
+
+#pre-footer-interno {
+    display: flex;
+    margin-left: 12.3vw;
+    margin-right: 12.3vw;
+    color: #333333;
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+}
+
+#pre-footer-interno li{
+    margin-bottom: 1.369vh;
+    font-size: 0.95rem;
+}
+
+#pre-footer-interno ul{
+    padding: 2.05vh 0.976vw;
+    margin: 0px;
+}
+
+
+.colprefootsmall {
+    width: 17.08vw;
+    padding-left: 0.976vw;
+    padding-right: 0.976vw;
+}
+
+.colprefootbig {
+    padding-left: 0.976vw;
+    padding-right: 0.976vw;
+}
+
+
+
+footer{
+    height: 43.15vh;
+    background-image: url("immagini/foto1.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+
+footer button{
+    background-color: #9baf26;
+    color: black;
+    cursor: pointer;
+}
+
+
+footer[data-index='1']{
+    background-image: url(immagini/foto2.jpg);
+    background-position: top;
+}
+
+footer[data-index='1'] #blocco-footer {
+    color: black;
+}
+
+
+
+#blocco-footer {
+    display: flex;
+    height: 43.15vh;
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 6.51vw;
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+.originale{
+    background-color: #9baf26;
+    background-image: none;
+}
+
+.originale #blocco-footer {
+    margin-left: 0;
+    width: 100%;
+    color: white;
+}
+
+.originale #blocco-footer a{
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+
+#blocco-footer div{
+    text-align: center;
+}
+
+#blocco-footer a {
+    color: #a5bb28
+}
+
+
+
+@media(max-width: 700px){
+    #pre-footer-esterno{
+        height: 100%;
+        padding-top: 0vh;
+        padding-bottom: 2vh;
+    }
+
+    #pre-footer-interno {
+        flex-direction: column;
+        margin-left: 1vw;
+        position: static;
+    }
+
+    #pre-footer-interno li{
+        margin-bottom: 1%;
+        font-size: 1rem;
+    }
+
+    #pre-footer-interno ul{
+        padding-top: 0%;
+        padding-bottom: 0%;
+        margin-left: 4%;
+    }
+
+    .colprefootsmall {
+        width: 100%;
+    }
+
+    footer {
+        background-position: right;
+        height: 48.835vh;
+    }
+
+    #blocco-footer {
+        width: 60%;
+        margin-left: 2vw;
+        padding-top: 3%;
+    }
+}
+
+/* La metto qui in modo che tale classe mi comandi sempre su altre possibili regole */
+
+.hidden {
+    display: none;
+}
