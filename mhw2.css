@@ -25,7 +25,7 @@ a {
 }
 
 h3 {
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
     margin-top: 2.739vh;
@@ -171,23 +171,20 @@ header h3 {
     margin-bottom: 0vh;
     height: 4.11vh;
     font-size: 0.875rem;
+    font-weight: 300;
 }
 
 header a {
-    padding-left: 1.3vw;
-    padding-right: 1.3vw;
+    padding: 0 1.3vw;
     font-size: 0.75rem;
-    font-weight: bold;
 }
 
 #blocco-header {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-left: 11.377vw;
-    margin-right: 11.377vw;
-    padding-left: 0.976vw;
-    padding-right: 0.976vw;
+    margin: 0 11.377vw;
+    padding: 0 0.976vw;
 }
 
 #blocco-header a {
@@ -195,7 +192,8 @@ header a {
 }
 
 #blocco-recensioni{
-    position: relative; 
+    position: relative;
+    display: inline-block;
 }
 
 .hover {
@@ -209,27 +207,24 @@ header a {
     /* Ho aggiornato il riferimento grazie all'id 'blocco-recensioni' sopra */
 }
 
-#blocco-recensioni ul{
-    margin: 0;
-    padding: 0;
-    width: 0%;
+#blocco-recensioni span{
+    display: inline-block;
 }
 
-#blocco-recensioni nav ul {
-    margin: 0 0 0 0;
-    width: auto;
+#blocco-recensioni nav span {
+    width: 90%;
     padding: 0;
     text-transform: none;
 }
 
-#blocco-recensioni nav ul li {
+#blocco-recensioni nav span span {
     display: block;    
     border-bottom: solid 1px gray;
     padding: 10px 0 10px 10px;
-    margin-right: 10px;
+    margin-left: 5%;
 }
 
-#blocco-recensioni nav ul a {
+#blocco-recensioni nav span a {
     font-size: 0.8em;
     color: gainsboro;
     padding: 0;
@@ -246,8 +241,9 @@ header a {
     del menu a tendina che sarà position: absolute */
 }
 
-a#tasto-recensioni strong {
-    font-weight: bold;
+#tasto-recensioni strong {
+    font-weight: bold;    
+    letter-spacing: -0.03rem;
 }
 
 .arrow {
@@ -279,6 +275,15 @@ a#tasto-recensioni strong {
 
     #menu{
         display: block;
+    }
+
+    a.fa-bars{
+        color: black;
+        font-size: 1.5em;
+    }
+
+    a.fa-bars:hover{
+        color:#9baf26;
     }
 
     #sistemamargine a {
@@ -318,17 +323,21 @@ a#tasto-recensioni strong {
         margin-left: 2%;
     }
 
-    #tasto-recensioni {
-        width: 120%;
-        padding-left: 15%;
+    #blocco-recensioni{
+        width: 100%;
     }
 
-    #blocco-recensioni ul{
-        width: 20%;
+    #tasto-recensioni {
+        width: 100%;
+        padding: 0 15%;
     }
 
     #blocco-recensioni nav {
         width: calc(50% - 10vw);
+    }
+
+    #blocco-recensioni nav span{
+        width: 90%;
     }
 
     .arrow {
@@ -358,13 +367,12 @@ a#tasto-recensioni strong {
     text-align: center;
     margin: 0px;
     padding: 0px;
-    font-family: 'Pontano Sans';
     font-weight: normal;
     line-height: 3.28vh;
 }
 
 #main-section h2{
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     font-size: 2.25rem;
     margin-bottom: 2.05vh;
     font-weight: 300;
@@ -667,3 +675,5 @@ footer[data-index='1'] #blocco-footer {
 .hidden {
     display: none;
 }
+
+
