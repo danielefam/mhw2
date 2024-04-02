@@ -9,11 +9,9 @@ function cambioImmagineLogoOut() {
 }
 
 
-
-function apriMenu(){
+function apriMenu(event){
     const menu = document.querySelector('#blocco-recensioni nav');
-    const tasto = document.querySelector('#tasto-recensioni');
-    tasto.classList.add('hover');
+    event.currentTarget.classList.add('hover');
     menu.classList.remove('hidden');
 }
 
@@ -77,6 +75,9 @@ function cambiaFooter() {
 }
 
 
+
+
+
 const bottoneCambioFooter = document.querySelector('footer button');
 bottoneCambioFooter.addEventListener('click', cambiaFooter);
 
@@ -90,9 +91,10 @@ cambioImmagine.addEventListener('mouseout', cambioImmagineLogoOut);
 const visitaShop = document.querySelector('#main-section-visita a');
 visitaShop.addEventListener('click', appendiTesto);
 
-const menuRecensioni = document.querySelector('#blocco-recensioni ul');
+const menuRecensioni = document.querySelector('#tasto-recensioni');
 menuRecensioni.addEventListener('mouseover', apriMenu);
 
-const bloccoMenuRecensioni = document.querySelector('#blocco-recensioni ul')
-bloccoMenuRecensioni.addEventListener('mouseout', chiudiMenu);
+const bloccoMenuRecensioni = document.querySelector('#blocco-recensioni span')
+bloccoMenuRecensioni.addEventListener('mouseleave', chiudiMenu);
+
 
